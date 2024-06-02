@@ -1,4 +1,5 @@
-
+import Card from './components/Card'
+import Header from './components/Header'
 import './App.css'
 
 function App() {
@@ -6,7 +7,10 @@ function App() {
 
   return (
     <>
-      <h1>Hello World!</h1>
+     <div className='container'>
+        <Header />
+        <Card />
+      </div>
     </>
   )
 }
