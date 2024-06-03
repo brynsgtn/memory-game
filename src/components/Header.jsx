@@ -1,12 +1,12 @@
 import '../App.css'
 
-export default function Header() {
+export default function Header({currentScore, highScore}) {
     return (
         <>
-            <h1 className="text-center mt-5 header"><img src="/nba.png" className="logo"/>NBA MEMORY GAME</h1>
-            <p className="text-center">DON'T CLICK THE SAME PLAYER TWICE</p>
-            <p>CURRENT SCORE: 0</p>
-            <p>HIGH SCORE: 0</p>
+            <h2 className="text-center mt-5 header"><img src="/nba.png" className="logo"/>NBA MEMORY GAME</h2>
+            <p className="text-center fst-italic">"DON'T CLICK THE SAME PLAYER TWICE"</p>
+            <p className='fw-semibold'>CURRENT SCORE: {currentScore}</p>
+            <p className='fw-semibold'>HIGH SCORE: {highScore}</p>
         </>
 
     )

@@ -30,8 +30,8 @@ const playersInfo = [
     {
         id: 5,
         name: "Giannis Antetokounmpo",
-        nickname: "Milwaukee Bucks",
-        team: "Power forward",
+        nickname: "Greak Freak",
+        team: "Milwaukee Bucks",
         url: "/pictures/Antetokounmpo.avif"
     },
     {

@@ -1,25 +1,25 @@
-import players from "../../playersinfo";
 
 
-export default function Card() {
+
+export default function Card({id, url, name, nickname, team, onClick}) {
+
+  
     return (
         <>
-        <div className="row row-cols-1 row-cols-md-3 g-4">
-        {players.map((player) => {
-            return (
-            <div key={player.id}  className="col">
+
+            <div key={id}  className="col" onClick={onClick}>
                 <div className="card h-100">
-                    <img src={player.url} className="card-img-top" alt={player.name} />
+                    <img src={url} className="card-img-top" alt={name} />
                     <div className="card-body text-center">
-                        <p className="card-title h5">{player.name}</p>
-                        <p><small>"{player.nickname}"</small></p>
-                        <p><em>{player.team}</em></p>
+                        <p className="card-title h5">{name}</p>
+                        <p><small>"{nickname}"</small></p>
+                        <p className="fw-semibold">{team}</p>
                     </div>
                 </div>
             </div>    
-            )
-        })}
-        </div>
+        
+     
+        
 
         </>
 
