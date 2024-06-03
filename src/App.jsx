@@ -31,7 +31,6 @@ function App() {
       setSelectedIds([...selectedIds, id]);
       setCurrentScore(currentScore + 1);
     }
-
     // Shuffle the players array for a new order
     let randomArray = players
                     .map((a) => ({ sort: Math.random(), value: a }))
