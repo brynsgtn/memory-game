@@ -1,6 +1,6 @@
 # NBA Memory Game
 
-![NBA Memory Game Preview](./public/Screenshot2.png)
+![NBA Memory Game Preview](/public/Screenshot2.png)
 
 ## Overview
 
@@ -60,5 +60,5 @@ To use the NBA Memory Game application:
 
 ## Screenshots
 
-![Screenshot 1](./public/Screenshot1.png)
-![Screenshot 2](./public/Screenshot2.png)
+![Screenshot 1](/public/Screenshot1.png)
+![Screenshot 2](/public/Screenshot2.png)
