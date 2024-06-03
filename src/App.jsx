@@ -20,8 +20,7 @@ function App() {
   },[currentScore])
 
   const clickHandler = (e, id) => {
-    console.log(`Card with id ${id} clicked`);
-
+  
     // Check if the clicked ID is already in the selectedIds array
     if (selectedIds.includes(id)) {
       // If it's a duplicate click, reset selectedIds and currentScore
@@ -33,30 +32,29 @@ function App() {
       setCurrentScore(currentScore + 1);
     }
 
-
-
-
     // Shuffle the players array for a new order
     let randomArray = players
-      .map((a) => ({ sort: Math.random(), value: a }))
-      .sort((a, b) => a.sort - b.sort)
-      .map((a) => a.value);
+                    .map((a) => ({ sort: Math.random(), value: a }))
+                    .sort((a, b) => a.sort - b.sort)
+                    .map((a) => a.value);
 
     setRandom(randomArray);
   };
 
   return (
     <>
-     <div className='container'>
-        <Header currentScore={currentScore}
+      <div className='container'>
+        <Header 
+                currentScore={currentScore}
                 highScore={highScore}
         />
-        <CardsContainer players={random}
+        <CardsContainer 
+                        players={random}
                         onClick={clickHandler}
         />       
-        <Footer /> 
+        
       </div>
-      
+      <Footer /> 
     </>
   )
 }
