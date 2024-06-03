@@ -20,7 +20,7 @@ function App() {
   },[currentScore])
 
   const clickHandler = (e, id) => {
-  
+
     // Check if the clicked ID is already in the selectedIds array
     if (selectedIds.includes(id)) {
       // If it's a duplicate click, reset selectedIds and currentScore
